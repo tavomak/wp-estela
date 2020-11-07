@@ -1,0 +1,10 @@
+.card {
+    padding-top: 20px;
+    border-radius: 0;
+
+    &-header,
+    &-footer {
+        background: none;
+        border: none;
+    }
+}

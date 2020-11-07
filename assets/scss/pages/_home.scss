@@ -1,0 +1,49 @@
+.info-culture{
+    position: relative;
+    top: -40px;
+    &--title{
+        font-size: 1.6rem;
+    }
+    &--icon{
+        max-width: 70px;
+        @include MQ(L){
+            position: absolute;
+            left: -35px;
+            top: 80px;
+        }
+    }
+    &--text{
+        @include MQ(L){
+            margin-left: 50px;
+        }
+    }
+}
+.service{
+    &-title{
+        font-size: 1rem;
+    }
+    &-subtitle{
+        font-size: .8rem;
+        max-width: 360px;
+    }
+    &-icon{
+        max-height: 50px;
+    }
+    &-item{
+        &--list{
+            min-height: 79.2px;
+        }
+    }
+}
+
+.aproach{
+    &-item{
+        text-align: center;
+        &--img{
+            margin: 20px auto;
+            width: 100%;
+            max-width: 60px;
+        }
+    }
+
+}

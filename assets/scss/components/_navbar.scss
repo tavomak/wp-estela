@@ -1,0 +1,100 @@
+.hamburger {
+    position: relative;
+    left: 0;
+    z-index: 10;
+}
+
+$animation-duration: 0.7s;
+
+.bk-primary-nav {
+    height: 100%;
+    background: rgba($white, .99);
+    position: fixed;
+    max-width: 100%;
+    width: 100%;
+    z-index: -5;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+
+    &__menu {
+        //@include centerer;
+        min-height: 100vh;
+
+        &-item {
+                font-size: 1.8rem;
+                text-align: center;
+                padding: 8px 0;
+        }
+    }
+
+    &.loaded {
+        opacity: 1;
+        position: fixed;
+        z-index: 5;
+    }
+}
+
+button:focus {
+    outline: none;
+}
+
+.bk-sticky--nav{
+    min-height: 50px;
+    position: relative;
+    z-index: 6;
+    width: 100%;
+    transition: 2s all ease-in-out;
+    &__logo{
+        @include centerer();
+        max-width: 65px;
+        padding-top: 5px;
+        @include MQ(M){
+            max-width: 120px;
+            padding-top: 50px;
+        }
+    }
+}
+
+#menu-primary {
+    list-style: decimal;
+    font-size: 1.3rem;
+    color: $brand-complementary-color;
+    .nav-link {
+        font-weight: $font-bold;
+        font-size: 2rem;
+        text-transform: uppercase;
+        //color: $brand-complementary-color;
+        &:hover{
+            color: $brand-secondary-color;
+        }
+    }
+    .drop{
+        &-menu{
+            .menu-item{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+        &-item{
+            text-transform: uppercase;
+            color: $brand-tertiary-color;
+            font-size: 1.2rem;
+            //margin: 20px;
+            &:hover{
+                color: $brand-secondary-color
+            }
+            &::before{
+                content: "";
+                display: block;
+                width: 100px;
+                height: 2px;
+                background: $brand-tertiary-color;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.menu-item-title .nav-link{
+    padding-bottom: 40px;
+}

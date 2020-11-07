@@ -1,0 +1,34 @@
+#myVideo {
+    @include MQ(M) {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+        background-color: black;
+        /* in case the video doesn't fit the whole page*/
+        //background-image: ;
+        background-position: center center;
+        background-size: contain;
+        object-fit: cover;
+        /*cover video background */
+        //z-index: 1 !important;
+        min-height: 100vh;
+        z-index: -1;
+        filter: brightness(1.7);
+    }
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+.long-content {
+    min-height: 80vh;
+    position: relative;
+    overflow: hidden;
+    background: rgba(21, 0, 37, 0.582);
+}
