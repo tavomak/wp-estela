@@ -16,6 +16,9 @@
         &:hover {
             background: $brand-secondary-color;
         }
+        &:disabled{
+            background: $brand-secondary-color;
+        }
     }
     &-secondary{
         background: $brand-secondary-color;

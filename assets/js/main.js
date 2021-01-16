@@ -15,11 +15,10 @@ $(function () {
 	*/
 
     $(window).on('load', function () {
-        console.log('funca!');
         $('.cd-loader').fadeOut('slow', function () {
             $(this).remove();
         });
-        setCarITems();
+        //setCarITems();
     });
 
 
@@ -62,7 +61,7 @@ $(function () {
    ------------------------------------------------------------------
        CAR ITEM
    ------------------------------------------------------------------
-   */
+   
 
    if(window.sessionStorage.getItem('services') == null){
        var services =[];
@@ -137,6 +136,7 @@ $(function () {
         });
         
     }
+    */
 
     /* 
 	------------------------------------------------------------------
@@ -169,14 +169,34 @@ $(function () {
     //$('#fuenteSbj').val(sbjFuente);
     //$('#medioSbj').val(sbjMedio);
 
+    $('.formulario-general input').on('focus',function(){
+        $(this).parent('.form-group').find('.label').addClass('activelabel')
+    });
+    $('.formulario-general input').on('blur',function(){
+        let length = $(this).val();
+        console.log(length.length)
+        if(length.length > 0){
+            $(this).parent('.form-group').find('.label').addClass('activelabel')
+        } else {
+            $(this).parent('.form-group').find('.label').removeClass('activelabel')
+        }
+    });
+
     /* 
 	------------------------------------------------------------------
 		Validacion de Formularios
 	------------------------------------------------------------------
     */
     $(".wpcf7").on('wpcf7:mailsent', function (event) {
-        $('.form-content').addClass('d-none');
-        $('#form-success').removeClass('d-none');
+        // $('.form-content').addClass('d-none');
+        // $('#form-success').removeClass('d-none');
+        console.log("send")
+        Swal.fire({
+            title: 'Mensaje enviado',
+            text: '¡Gracias por solicitar información, pronto te contactaremos!',
+            icon: 'success',
+            confirmButtonText: 'cerrar'
+        })
     });
 
     $(".wpcf7").on('wpcf7:mailfailed', function (event) {

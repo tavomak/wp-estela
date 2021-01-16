@@ -9,7 +9,7 @@
 
 
         <?php
-    get_template_part('includes/template-parts/shoping-list');
+    get_template_part('includes/loops/page-content');
 ?>
 
     </div>

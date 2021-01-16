@@ -19,10 +19,10 @@
                             </span>
                             <span class="static-headline">digitales.</span>
                         </h1>
-                        <p class="pt-2">Somos creadores digitales, vivimos y disfrutamos del ambiente online. <br>
+                        <p class="pt-2"><span class="d-none d-md-inline">Somos creadores digitales, vivimos y disfrutamos del ambiente online.</span> <br>
                             Nos especializamos en diseñar y desarrollar sitios y aplicaciones web a la medida.
                         </p>
-                        <a href="<?php the_permalink();?>" class="btn btn-sm btn-secondary px-3 py-2 mt-4">Cuentanos
+                        <a href="#" class="btn btn-sm btn-secondary px-3 py-2 mt-4" data-toggle="modal" data-target="#kit-form-modal">Cuentanos
                             sobre tu proyecto</a>
                     </section> <!-- cd-intro -->
                 </div>
@@ -40,9 +40,9 @@
     </div>
 </section>
 
-<section class="container info-culture mb-5">
+<section class="container info-culture mb-5 d-none d-md-block">
     <div class="row align-items-center">
-        <div class="col-md-6 col-lg-5 p-0">
+        <div class="col-md-6 col-lg-5 p-md-0">
             <div class="wrapper bg-ligth-grey py-lg-5 px-lg-4">
                 <h2 class="info-culture--title pl-2">
                     <span class="title-pre">Porque creemos que</span><br>
@@ -50,10 +50,10 @@
                 </h2>
             </div>
         </div>
-        <div class="col-md-6 col-lg-7 bg-dark-grey p-0">
+        <div class="col-md-6 col-lg-7 bg-dark-grey p-md-0">
             <ul class="wrapper shadow d-md-flex text-white p-lg-5 w-100">
-                <li class="info-culture--icon">
-                    <img src="<?php bloginfo('template_directory');?>/assets/img/info-icon.svg" alt="">
+                <li class="info-culture--icon d-none d-md-inline">
+                    <img src="<?php bloginfo('template_directory');?>/assets/img/info-icon.svg" alt="Cada Interacción Cuenta">
                 </li>
                 <li class="info-culture--text">
                     <p>
@@ -88,104 +88,88 @@
     <div class="container py-5">
         <div class="row py-5">
             <div class="col-lg-6 p-0">
-                <img class="w-100" src="<?php bloginfo('template_directory');?>/assets/img/servicios-home.jpg"
-                    alt="Nuestros servicios">
+                <img class="w-100" src="<?php bloginfo('template_directory');?>/assets/img/servicios-home.jpg" alt="Nuestros servicios">
             </div>
             <div class="col-lg-6 p-0">
-                <ul class="service-list">
-                    <li class="service-item d-flex">
-                        <ul
-                            class="service-item--list d-flex justify-content-between align-items-center bg-white border w-100 w-100">
-                            <li><img class="w-100 service-icon"
-                                    src="<?php bloginfo('template_directory');?>/assets/img/uxui.svg" alt="UX AND UI">
+                <ul class="service-list text-center text-md-left">
+                    <li class="service-item d-md-flex">
+                        <ul class="service-item--list d-md-flex justify-content-between align-items-center p-4 p-md-0 bg-white border w-100 w-100">
+                            <li>
+                                <img class="w-100 service-icon" src="<?php bloginfo('template_directory');?>/assets/img/uxui.svg" alt="UX AND UI">
                             </li>
                             <li>
                                 <h3 class="service-title font-weight-bold">UX AND UI</h3>
-                                <p class="service-subtitle mb-0">Diseñamos y desarrollamos servicios que faciliten a
-                                    personas mostrarse</p>
+                                <p class="service-subtitle mb-md-0">Diseñamos o mejoramos tu sitio web desde la arquitectura de la información hasta la usabilidad</p>
                             </li>
                             <li class="px-4">
                                 <a href="#" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#kit-form-modal">cotizar</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="service-item d-flex">
+                    <li class="service-item d-md-flex">
                         <ul
-                            class="service-item--list d-flex justify-content-between align-items-center bg-white border w-100 w-100">
-                            <li><img class="w-100 service-icon"
-                                    src="<?php bloginfo('template_directory');?>/assets/img/web-develop.svg"
-                                    alt="WEB DEVELOPMENT"></li>
+                            class="service-item--list d-md-flex justify-content-between align-items-center p-4 p-md-0 bg-white border w-100 w-100">
+                            <li>
+                                <img class="w-100 service-icon" src="<?php bloginfo('template_directory');?>/assets/img/web-develop.svg" alt="WEB DEVELOPMENT">
+                            </li>
                             <li>
                                 <h3 class="service-title font-weight-bold">WEB DEVELOPMENT</h3>
-                                <p class="service-subtitle mb-0">Diseñamos y desarrollamos servicios que faciliten a
-                                    personas mostrarse</p>
+                                <p class="service-subtitle mb-md-0">Desarrollamos tu aplicación web, sitio o ecommerce con foco en tus reglas de negocio.</p>
                             </li>
                             <li class="px-4">
-                                <a href="" class="btn btn-sm btn-outline-secondary">cotizar</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#kit-form-modal">cotizar</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="service-item d-flex">
-                        <ul
-                            class="service-item--list d-flex justify-content-between align-items-center bg-white border w-100 w-100">
-                            <li><img class="w-100 service-icon"
-                                    src="<?php bloginfo('template_directory');?>/assets/img/software-develop.svg"
-                                    alt="SOFTWARE DEVELOPMENT"></li>
+                    <li class="service-item d-md-flex">
+                        <ul class="service-item--list d-md-flex justify-content-between align-items-center p-4 p-md-0 bg-white border w-100 w-100">
+                            <li>
+                                <img class="w-100 service-icon" src="<?php bloginfo('template_directory');?>/assets/img/software-develop.svg" alt="SOFTWARE DEVELOPMENT"></li>
                             <li>
                                 <h3 class="service-title font-weight-bold">SOFTWARE DEVELOPMENT</h3>
-                                <p class="service-subtitle mb-0">Diseñamos y desarrollamos servicios que faciliten a
-                                    personas mostrarse</p>
+                                <p class="service-subtitle mb-md-0">Desarrollamos sistemas complejos de manejo y gestión fáciles de usar por los administradores </p>
                             </li>
                             <li class="px-4">
-                                <a href="" class="btn btn-sm btn-outline-secondary">cotizar</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#kit-form-modal">cotizar</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="service-item d-flex">
-                        <ul
-                            class="service-item--list d-flex justify-content-between align-items-center bg-white border w-100 w-100">
-                            <li><img class="w-100 service-icon"
-                                    src="<?php bloginfo('template_directory');?>/assets/img/mentoring.svg"
-                                    alt="MENTORING AND CONSULTING"></li>
+                    <li class="service-item d-md-flex">
+                        <ul class="service-item--list d-md-flex justify-content-between align-items-center p-4 p-md-0 bg-white border w-100 w-100">
+                            <li>
+                                <img class="w-100 service-icon" src="<?php bloginfo('template_directory');?>/assets/img/mentoring.svg" alt="MENTORING AND CONSULTING"></li>
                             <li>
                                 <h3 class="service-title font-weight-bold">MENTORING AND CONSULTING</h3>
-                                <p class="service-subtitle mb-0">Diseñamos y desarrollamos servicios que faciliten a
-                                    personas mostrarse</p>
+                                <p class="service-subtitle mb-md-0">Te ayudamos a desarrollar un sistema de generación y gestión de leads desde tu sitio web</p>
                             </li>
                             <li class="px-4">
-                                <a href="" class="btn btn-sm btn-outline-secondary">cotizar</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#kit-form-modal">cotizar</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="service-item d-flex">
-                        <ul
-                            class="service-item--list d-flex justify-content-between align-items-center bg-white border w-100 w-100">
-                            <li><img class="w-100 service-icon"
-                                    src="<?php bloginfo('template_directory');?>/assets/img/cro.svg"
-                                    alt="CONVERSION RATE OPTIMIZATION"></li>
+                    <li class="service-item d-md-flex">
+                        <ul class="service-item--list d-md-flex justify-content-between align-items-center p-4 p-md-0 bg-white border w-100 w-100">
+                            <li>
+                                <img class="w-100 service-icon" src="<?php bloginfo('template_directory');?>/assets/img/cro.svg" alt="CONVERSION RATE OPTIMIZATION"></li>
                             <li>
                                 <h3 class="service-title font-weight-bold">CONVERSION RATE OPTIMIZATION</h3>
-                                <p class="service-subtitle mb-0">Diseñamos y desarrollamos servicios que faciliten a
-                                    personas mostrarse</p>
+                                <p class="service-subtitle mb-md-0">Te ayudamos a aumentar la tasa de conversión de tus visitantes.</p>
                             </li>
                             <li class="px-4">
-                                <a href="" class="btn btn-sm btn-outline-secondary">cotizar</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#kit-form-modal">cotizar</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="service-item d-flex">
-                        <ul
-                            class="service-item--list d-flex justify-content-between align-items-center bg-white border w-100 w-100">
-                            <li><img class="w-100 service-icon"
-                                    src="<?php bloginfo('template_directory');?>/assets/img/integrations.svg"
-                                    alt="INTEGRATIONS AND OUTSOURCING"></li>
+                    <li class="service-item d-md-flex">
+                        <ul class="service-item--list d-md-flex justify-content-between align-items-center p-4 p-md-0 bg-white border w-100 w-100">
+                            <li>
+                                <img class="w-100 service-icon" src="<?php bloginfo('template_directory');?>/assets/img/integrations.svg" alt="INTEGRATIONS AND OUTSOURCING"></li>
                             <li>
                                 <h3 class="service-title font-weight-bold">INTEGRATIONS AND OUTSOURCING</h3>
-                                <p class="service-subtitle mb-0">Diseñamos y desarrollamos servicios que faciliten a
-                                    personas mostrarse</p>
+                                <p class="service-subtitle mb-md-0">Los sitios y apps web son entidades vivas, mejora continua y automatización es la clave</p>
                             </li>
                             <li class="px-4">
-                                <a href="" class="btn btn-sm btn-outline-secondary">cotizar</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#kit-form-modal">cotizar</a>
                             </li>
                         </ul>
                     </li>
@@ -260,9 +244,12 @@
         </div>
     </div>
     <div class="row pt-5 align-items-center">
-      <div class="col-md-6">
-        <div class="process-text pr-md-5">
-            <h2 class="info-culture--title">
+        <div class="col-md-6 order-md-2">
+            <img class="w-100" src="<?php bloginfo('template_directory');?>/assets/img/proceso.svg" alt="Nuestro proceso">
+        </div>
+      <div class="col-md-6 order-md-1">
+        <div class="process-text pr-md-5 mt-5 mt-md-0">
+            <h2 class="info-culture--title text-center">
                 <span class="title-pre">Seguimos</span><br>
                 <span class="title-regular font-weight-bold">Un proceso iterativo</span>
             </h2>
@@ -271,9 +258,7 @@
             </p>
         </div>
       </div>
-      <div class="col-md-6">
-        <img class="w-100" src="<?php bloginfo('template_directory');?>/assets/img/proceso.svg" alt="Nuestro proceso">
-      </div>
+      
     </div>
 </section>
 
@@ -290,8 +275,8 @@
      
         <div class="item row align-items-center">
           <div class="col-md-7">
-            <div class="project-img pr-5">
-              <img class="w-100" src="<?php bloginfo('template_directory');?>/assets/img/proyecto-70w.png" alt="70 we website">
+            <div class="project-img pr-md-5">
+              <img class="w-100" src="<?php bloginfo('template_directory');?>/assets/img/proyecto-70w.png" alt="Desarrollo de sitio web inmobiliaria 70w">
             </div>
           </div>
           <div class="col-md-5">
@@ -303,15 +288,15 @@
                 <p>
                   Tiene más ideas de funciones geniales de las que puede pagar. Y seguirá teniendo nuevas ideas a lo largo de su proyecto de software.
                 </p>
-                <!-- <a href="" class="btn btn-sm btn-secondary">Ver proyecto</a> -->
+                <a href="https://www.70w.cl/" targrt="_blank" class="btn btn-sm btn-secondary">Ver proyecto</a>
             </div>
           </div>
         </div>
       
         <div class="item row align-items-center">
           <div class="col-md-7">
-            <div class="project-img pr-5">
-              <img class="w-100" src="<?php bloginfo('template_directory');?>/assets/img/proyecto-gsd.png" alt="70 we website">
+            <div class="project-img pr-md-5">
+              <img class="w-100" src="<?php bloginfo('template_directory');?>/assets/img/proyecto-gsd.png" alt="Desarrollo de sitio web GSD00">
             </div>
           </div>
           <div class="col-md-5">
@@ -323,15 +308,15 @@
                 <p>
                   Tiene más ideas de funciones geniales de las que puede pagar. Y seguirá teniendo nuevas ideas a lo largo de su proyecto de software.
                 </p>
-                <!-- <a href="" class="btn btn-sm btn-secondary">Ver proyecto</a> -->
+                <a href="https://gsd00.com/" targrt="_blank"  class="btn btn-sm btn-secondary">Ver proyecto</a>
             </div>
           </div>
         </div>
 
         <div class="item row align-items-center">
           <div class="col-md-7">
-            <div class="project-img pr-5">
-              <img class="w-100" src="<?php bloginfo('template_directory');?>/assets/img/proyecto-brick.png" alt="70 we website">
+            <div class="project-img pr-md-5">
+              <img class="w-100" src="<?php bloginfo('template_directory');?>/assets/img/proyecto-brick.png" alt="Desarrollo de sitio web inmobiliaria Brick">
             </div>
           </div>
           <div class="col-md-5">
@@ -343,7 +328,7 @@
                 <p>
                   Tiene más ideas de funciones geniales de las que puede pagar. Y seguirá teniendo nuevas ideas a lo largo de su proyecto de software.
                 </p>
-                <!-- <a href="" class="btn btn-sm btn-secondary">Ver proyecto</a> -->
+                <a href="https://ibrick.cl/" targrt="_blank" class="btn btn-sm btn-secondary">Ver proyecto</a>
             </div>
           </div>
         </div>
@@ -353,7 +338,10 @@
 
 <section class="cerebrollo container py-5 my-5">
   <div class="row align-items-center">
-    <div class="col-6">
+    <div class="col-md-6 order-md-2">
+        <img class="w-100" src="<?php bloginfo('template_directory');?>/assets/img/banner-cerebrollo.jpg" alt="Cerebrollo">
+    </div>
+    <div class="col-md-6 mb-4 order-md-1">
       <div class="project-text">
           <h2 class="info-culture--title pb-4">
               <span class="title-pre">Conoce <a href="https://cerebrollo.guru/">Cerebrollo.guru</a></span><br>
@@ -367,9 +355,6 @@
           </p>
           <a href="https://cerebrollo.guru/" class="btn btn-sm btn-secondary">ir a cerebrollo.guru</a>
       </div>
-    </div>
-    <div class="col-6">
-      <img class="w-100" src="<?php bloginfo('template_directory');?>/assets/img/banner-cerebrollo.jpg" alt="Cerebrollo">
     </div>
   </div>
 </section>

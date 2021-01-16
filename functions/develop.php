@@ -6,7 +6,7 @@
 // CUSTOM ADMIN LOGIN HEADER LOGO
 function my_custom_login_logo()
 {
-    echo '<style  type="text/css">#login{padding:0;} .login h1 a {  background-image:url(' . get_bloginfo('template_directory') . '/assets/img/menu-logo.png)  !important;background-size: 180px; margin: 0 auto;width: 180px;height: 180px;} </style>';
+    echo '<style  type="text/css">#login{padding:20px 0;} .login h1 a {  background-image:url(' . get_bloginfo('template_directory') . '/assets/img/animacionInicial250.gif)  !important;background-size: 180px; margin: 0 auto;width: 180px;height: 180px;} </style>';
 }
 add_action('login_head',  'my_custom_login_logo');
 
@@ -15,7 +15,7 @@ function wpb_custom_logo() {
 echo '
 <style type="text/css">
 #wpadminbar #wp-admin-bar-wp-logo > .ab-item .ab-icon:before {
-background-image: url(' . get_bloginfo('stylesheet_directory') . '/assets/img/menu-logo.png) !important;
+background-image: url(' . get_bloginfo('stylesheet_directory') . '/assets/img/animacionInicial250.gif) !important;
 background-size: cover;
 color:rgba(0, 0, 0, 0);
 }

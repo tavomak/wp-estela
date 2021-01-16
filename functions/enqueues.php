@@ -2,13 +2,13 @@
 /*
  * Enqueues
  */
-$url = 'https://code.jquery.com/jquery-3.4.1.min.js';
+$url = 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js';
 $test_url = @fopen($url, 'r');
 if ($test_url !== false) {
 	function load_external_jQuery()
 	{
 		wp_deregister_script('jquery');
-		wp_register_script('jquery', 'https://code.jquery.com/jquery-3.4.1.min.js');
+		wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js');
 		wp_enqueue_script('jquery');
 	}
 	add_action('wp_enqueue_scripts', 'load_external_jQuery');
@@ -16,7 +16,7 @@ if ($test_url !== false) {
 	function load_local_jQuery()
 	{
 		wp_deregister_script('jquery');
-		wp_register_script('jquery', get_template_directory_uri() . '/assets/js/jquery-3.4.1.min.js');
+		wp_register_script('jquery', get_bloginfo('template_url') . '/assets/js/jquery-3.4.1.min.js');
 		wp_enqueue_script('jquery');
 	}
 	add_action('wp_enqueue_scripts', 'load_local_jQuery');

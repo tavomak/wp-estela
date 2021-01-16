@@ -1,8 +1,23 @@
 <?php 
+// get the current taxonomy term
+$term = get_queried_object();
+
+
+// vars
+$image = get_field('imagen_de_la_categoria', $term);
+$al_cat_slug = $term->slug;
+$al_cat_name = $term->name;
     $query = new WP_Query(array(
         'post_type'      	=> 'servicios',
         'posts_per_page'	=> -1,
         'post_status'		=> 'publish',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'category',
+                'field' => 'slug',
+                'terms' => $al_cat_slug
+            )
+        )
     ));
     if ( $query->have_posts() ) : ?>
 <div class="row align-items-stretch">
@@ -33,7 +48,8 @@
             </div>
             <div class="card-footer">
                 <a href="<?php the_permalink();?>" class="btn btn-sm btn-primary px-3 py-2 ">ver más</a>
-                <a href="#" class="btn btn-sm btn-secondary px-3 py-2 add-to-cart add-<?php echo $post_slug;?>" data-servicio="<?php echo $post_slug;?>">Agregar</a>
+                <a href="#" class="btn btn-sm btn-secondary px-3 py-2 add-to-cart add-<?php echo $post_slug;?>"
+                    data-servicio="<?php echo $post_slug;?>">Agregar</a>
             </div>
         </div>
     </div>

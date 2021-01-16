@@ -19,3 +19,23 @@
 @import "components/footer";
 
 @import "pages/home";
+.formulario-general{
+    input, textarea{
+        background: none;
+        border:none;
+        border-bottom: 1px solid $brand-secondary-color;
+        border-radius: 0;
+    }
+    .input-group-text{
+        border-radius:0;
+        border-bottom: 1px solid $brand-secondary-color;
+    }
+    .label{
+        position: relative;
+        transition: .1s all ease-in-out;
+        transform: translateY(35px);
+    }
+    .activelabel{
+        transform: translateY(0);
+    }
+}
