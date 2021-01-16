@@ -22,3 +22,8 @@ jobs:
         server: ${{ secrets.FTP_URL }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: ${{ secrets.SERVER_DIR }}
+        exclude: .git*
+          - .git*/**
+          -  **/.git*/**
+          - .DS_Store
