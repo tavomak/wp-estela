@@ -11,7 +11,7 @@
                 <div class="col-md-9 d-flex align-items-center text-white">
                     <section class="cd-intro">
                         <h1 class="cd-headline push ">
-                            <span class="static-headline">Ayudamos a <br>personass a crear <br></span>
+                            <span class="static-headline">Ayudamos a <br>personasss a crear <br></span>
                             <span class="cd-words-wrapper">
                                 <b class="is-visible" style="letter-spacing: 6px;">estrategias</b>
                                 <b style="letter-spacing: 6px;">desarrollos</b>
