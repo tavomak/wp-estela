@@ -87,8 +87,9 @@
               <div class="container">
                 <div class="row align-items-stretch">
                   <div class="col-md-6 d-flex align-items-center">
+                    <?php echo do_shortcode( '[contact-form-7 id="18" title="Formulario_inicial"]' ); ?>
               
-                    <div class="wpcf7" role="form" id="wpcf7-f18-o1" lang="es-ES" dir="ltr">
+                    <!-- <div class="wpcf7" role="form" id="wpcf7-f18-o1" lang="es-ES" dir="ltr">
                       <form  method="post" name="formulario_inicial" id="formulario_inicial" class="wpcf7-form init formulario_cotizar formulario-general" novalidate="novalidate">
                           <div style="display: none;">
                             <input type="hidden" name="_wpcf7" value="18">
@@ -135,7 +136,7 @@
                               </div>
                           </div>
                       </form>
-                    </div>
+                    </div> -->
                   </div>
 
                   <div class="col-md-6 d-flex align-items-center">
@@ -154,7 +155,7 @@
                             <a href="https://www.facebook.com/Estela-Estudio-Digital-270227023118642" target="_blank">
                               <i class="fab fa-facebook-square"></i>
                             </a>
-                            <a href="https://www.behance.net/raskatafat" class="text-white" target="_blank">
+                            <a href="https://www.behance.net/tavomak" class="text-white" target="_blank">
                                 <i class="fab fa-behance"></i>
                             </a>
                    

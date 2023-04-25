@@ -1,11 +1,14 @@
+import { headLines } from './headlines.js';
+
 $(function () {
+    headLines()
     /* 
 	------------------------------------------------------------------
 		SBJS
 	------------------------------------------------------------------
 	*/
     function logSource(sbData) {
-        console.log('Cookies are set! Your source is: ${sbData.current.src}');z
+        console.log('Cookies are set! Your source is: ${sbData.current.src}');
     }
     //sbjs.init();
     /* 
